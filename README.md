@@ -1,6 +1,6 @@
 =====================================================================
                          CERTKIT-BLACKFORGE
-=====================================================================
+                         
 Certkit-Blackforge es una herramienta todo-en-uno para la gestión de
 certificados SSL/TLS en entornos Linux.
 
