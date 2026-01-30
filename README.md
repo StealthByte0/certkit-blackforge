@@ -1,7 +1,7 @@
 =====================================================================
                          CERTKIT-BLACKFORGE
-=====================================================================
-
+============================================
+<img width="1217" height="998" alt="imagen" src="https://github.com/user-attachments/assets/055831d1-4cf7-4262-be53-4116bb21e853" />
 Certkit-Blackforge es una herramienta todo-en-uno para la gestión de
 certificados SSL/TLS en entornos Linux.
 
@@ -27,10 +27,6 @@ CARACTERÍSTICAS PRINCIPALES
 - Detección automática de dependencias
 - Banner estilo hacker verde Matrix
 - Código portable, sin dependencias innecesarias
-  
-<img width="1217" height="998" alt="imagen" src="https://github.com/user-attachments/assets/055831d1-4cf7-4262-be53-4116bb21e853" />
-
-
 ---------------------------------------------------------------------
 DISTRIBUCIONES SOPORTADAS
 ---------------------------------------------------------------------
