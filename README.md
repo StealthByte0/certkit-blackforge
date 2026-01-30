@@ -64,21 +64,21 @@ Missing dependencies are installed automatically when possible.
 INSTALLATION
 ---------------------------------------------------------------------
 
-1. Clone the repository:
+1. *Clone the repository:*
 
-   git clone https://github.com/StealthByte0/certkit-blackforge.git
+   `git clone https://github.com/StealthByte0/certkit-blackforge.git`
 
-2. Enter the directory:
+2. *Enter the directory:*
 
-   cd certkit-blackforge
+   `cd certkit-blackforge`
 
-3. Grant execution permissions:
+3. *Grant execution permissions:*
 
-   chmod +x Certkit-Blackforge.sh
+   `chmod +x Certkit-Blackforge.sh`
 
-4. Run as root:
+4. *Run as root:*
 
-   sudo ./Certkit-Blackforge.sh
+   `sudo ./Certkit-Blackforge.sh`
 
 
 ---------------------------------------------------------------------
@@ -117,7 +117,7 @@ certkit-blackforge/
 |
 |-- Certkit-Blackforge.sh
 |-- README.txt
-|-- docs/
+
 
 
 ---------------------------------------------------------------------
