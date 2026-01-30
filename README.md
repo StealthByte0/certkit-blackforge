@@ -1,15 +1,6 @@
 =====================================================================
                          CERTKIT-BLACKFORGE
 =====================================================================
-
-██████╗ ███████╗██████╗ ████████╗██╗  ██╗██╗████████╗
-██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██║ ██╔╝██║╚══██╔══╝
-██████╔╝█████╗  ██████╔╝   ██║   █████╔╝ ██║   ██║
-██╔══██╗██╔══╝  ██╔══██╗   ██║   ██╔═██╗ ██║   ██║
-██████╔╝███████╗██║  ██║   ██║   ██║  ██╗██║   ██║
-╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝   ╚═╝
-
-
 Certkit-Blackforge es una herramienta todo-en-uno para la gestión de
 certificados SSL/TLS en entornos Linux.
 
@@ -163,7 +154,7 @@ X (Twitter): https://x.com/bl4ckd34thz
 LICENCIA
 ---------------------------------------------------------------------
 
-Este proyecto se distribuye bajo la licencia MIT.
+Este proyecto se distribuye bajo la licencia  GNU GENERAL PUBLIC LICENSE
 
 Puedes:
 - Usarlo
