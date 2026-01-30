@@ -423,8 +423,7 @@ function GenerarSolicitud() {
   # Mostrar un mensaje de confirmación
   echo -e "\033[32mLa solicitud de certificado se ha generado correctamente: ${cn}.csr\033[0m\n"
   cat ${cn}.csr
-  # Volver al menú principal
-  #MenuCertKeytool
+
 }
 ##########################################################################################################################################################################################################
 function RutaCacerts() {
@@ -581,7 +580,7 @@ function SobreescribirCertificado() {
         echo "Error: no se pudo generar el certificado."
     fi
 
-    #MenuCertKeytool
+
 }
 
 ##########################################################################################################################################################################################################
@@ -771,9 +770,6 @@ DNS.1 = $COMMON_NAME")
     return 1
   fi
 
-  # Limpia la pantalla y muestra un mensaje de éxito
- # clear
- # ascii_start
 echo -e "\033[32mCertificado generado exitosamente para $COMMON_NAME\033[0m"
 
 echo -e "${RED}********************************************************************************************************${RESET} \n"
