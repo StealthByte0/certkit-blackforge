@@ -2,33 +2,35 @@
                          CERTKIT-BLACKFORGE
 =
 <img width="1217" height="998" alt="imagen" src="https://github.com/user-attachments/assets/055831d1-4cf7-4262-be53-4116bb21e853" />
-Certkit-Blackforge es una herramienta todo-en-uno para la gestión de
-certificados SSL/TLS en entornos Linux.
+Certkit-Blackforge is an all-in-one tool for managing SSL/TLS
+certificates on Linux systems.
 
-Está diseñada para administradores de sistemas, DevOps, SRE y equipos
-de seguridad que necesitan crear, firmar, convertir e instalar
-certificados de forma simple, guiada y portable.
+It is designed for system administrators, DevOps, SREs, and security
+teams who need to create, sign, convert, and install certificates in a
+simple, guided, and portable way.
 
 
 ---------------------------------------------------------------------
-CARACTERÍSTICAS PRINCIPALES
+MAIN FEATURES
 ---------------------------------------------------------------------
 
-- Interfaz interactiva por menú
-- Soporte multilenguaje (Español / English)
-- Compatible con múltiples distribuciones Linux
-- Gestión completa de certificados SSL/TLS
-- Let’s Encrypt (ACME)
-- CA interna (Root / certificados firmados)
-- Certificados cliente (mTLS)
-- Certificados Wildcard (*.dominio.com)
+- Interactive menu-driven interface
+- Multilingual support (Spanish / English)
+- Compatible with multiple Linux distributions
+- Full SSL/TLS certificate lifecycle management
+- Let’s Encrypt (ACME) support
+- Internal CA (Root / signed certificates)
+- Client certificates (mTLS)
+- Wildcard certificates (*.domain.com)
 - Self-signed certificates
-- Soporte para Java Keystore (cacerts)
-- Detección automática de dependencias
-- Banner estilo hacker verde Matrix
-- Código portable, sin dependencias innecesarias
+- Java Keystore (cacerts) support
+- Automatic dependency detection and installation
+- Hacker-style green Matrix banner
+- Clean, portable Bash code with minimal dependencies
+
+
 ---------------------------------------------------------------------
-DISTRIBUCIONES SOPORTADAS
+SUPPORTED DISTRIBUTIONS
 ---------------------------------------------------------------------
 
 - Debian / Ubuntu
@@ -38,77 +40,77 @@ DISTRIBUCIONES SOPORTADAS
 - Arch Linux
 - SUSE / openSUSE
 
-El script detecta automáticamente la distribución e instala las
-dependencias necesarias.
+The script automatically detects the distribution and installs the
+required dependencies.
 
 
 ---------------------------------------------------------------------
-REQUISITOS
+REQUIREMENTS
 ---------------------------------------------------------------------
 
-- Bash 4 o superior
-- Acceso root
+- Bash 4 or newer
+- Root access
 - OpenSSL
 - curl
 
-Opcional:
-- certbot (Let’s Encrypt)
-- acme.sh (para DNS-01 / wildcards)
+Optional:
+- certbot (for Let’s Encrypt)
+- acme.sh (for DNS-01 and wildcard certificates)
 
-Las dependencias se instalan automáticamente si no están presentes.
+Missing dependencies are installed automatically when possible.
 
 
 ---------------------------------------------------------------------
-INSTALACIÓN
+INSTALLATION
 ---------------------------------------------------------------------
 
-1. Clonar el repositorio:
+1. Clone the repository:
 
    git clone https://github.com/StealthByte0/certkit-blackforge.git
 
-2. Entrar al directorio:
+2. Enter the directory:
 
    cd certkit-blackforge
 
-3. Dar permisos de ejecución:
+3. Grant execution permissions:
 
    chmod +x Certkit-Blackforge.sh
 
-4. Ejecutar como root:
+4. Run as root:
 
    sudo ./Certkit-Blackforge.sh
 
 
 ---------------------------------------------------------------------
-USO GENERAL
+GENERAL USAGE
 ---------------------------------------------------------------------
 
-Al iniciar la herramienta:
+When starting the tool:
 
-1. Selecciona el idioma
-2. Navega por el menú interactivo
-3. Elige el tipo de certificado
-4. Introduce los datos cuando el script los solicite
+1. Select the language
+2. Navigate through the interactive menu
+3. Choose the certificate type
+4. Enter the requested information when prompted
 
-No es necesario memorizar comandos ni editar archivos manualmente.
-
-
----------------------------------------------------------------------
-TIPOS DE CERTIFICADOS SOPORTADOS
----------------------------------------------------------------------
-
-- Certificados SSL con Let’s Encrypt
-- Certificados Wildcard (*.dominio.com)
-- Certificados Self-Signed
-- Root CA local
-- Certificados firmados por CA interna
-- Certificados cliente (mTLS)
-- Exportación a formatos PEM y PFX
-- Importación de certificados en Java cacerts
+No need to memorize OpenSSL commands or manually edit config files.
 
 
 ---------------------------------------------------------------------
-ESTRUCTURA DEL PROYECTO
+SUPPORTED CERTIFICATE TYPES
+---------------------------------------------------------------------
+
+- SSL certificates via Let’s Encrypt
+- Wildcard certificates (*.domain.com)
+- Self-signed certificates
+- Local Root CA
+- Certificates signed by an internal CA
+- Client certificates (mTLS)
+- Export to PEM and PFX formats
+- Import certificates into Java cacerts
+
+
+---------------------------------------------------------------------
+PROJECT STRUCTURE
 ---------------------------------------------------------------------
 
 certkit-blackforge/
@@ -119,29 +121,29 @@ certkit-blackforge/
 
 
 ---------------------------------------------------------------------
-NOTAS IMPORTANTES
+IMPORTANT NOTES
 ---------------------------------------------------------------------
 
-- Para Let’s Encrypt HTTP-01 el puerto 80 debe estar disponible
-- Para certificados Wildcard se recomienda usar DNS-01
-- Ejecutar siempre como root
-- No utilizar en producción sin entender el impacto de los cambios
-- Respaldar siempre las llaves privadas generadas
-
-
----------------------------------------------------------------------
-BUENAS PRÁCTICAS
----------------------------------------------------------------------
-
-- Usar certificados cliente (mTLS) para APIs internas
-- Usar CA interna en entornos cerrados
-- Automatizar renovaciones cuando sea posible
-- No compartir llaves privadas
-- Mantener backups de certificados y claves
+- For Let’s Encrypt HTTP-01, port 80 must be available
+- For wildcard certificates, DNS-01 validation is recommended
+- Always run the script as root
+- Do not use in production without understanding the impact
+- Always back up private keys and certificates
 
 
 ---------------------------------------------------------------------
-AUTOR
+BEST PRACTICES
+---------------------------------------------------------------------
+
+- Use client certificates (mTLS) for internal APIs
+- Use an internal CA for closed environments
+- Automate certificate renewals when possible
+- Never share private keys
+- Keep secure backups of certificates and keys
+
+
+---------------------------------------------------------------------
+AUTHOR
 ---------------------------------------------------------------------
 
 Author: – ラストドラゴン
@@ -150,39 +152,40 @@ X (Twitter): https://x.com/bl4ckd34thz
 
 
 ---------------------------------------------------------------------
-LICENCIA
+LICENSE
 ---------------------------------------------------------------------
 
-Este proyecto se distribuye bajo la licencia  GNU GENERAL PUBLIC LICENSE
+This project is distributed under the MIT License.
 
-Puedes:
-- Usarlo
-- Modificarlo
-- Distribuirlo
-- Integrarlo en otros proyectos
+You are free to:
+- Use it
+- Modify it
+- Distribute it
+- Integrate it into other projects
 
-Bajo tu propia responsabilidad.
+At your own risk.
 
 
 ---------------------------------------------------------------------
-CONTRIBUCIONES
+CONTRIBUTIONS
 ---------------------------------------------------------------------
 
-Las contribuciones son bienvenidas.
+Contributions are welcome.
 
-Si encuentras un problema:
-1. Abre un issue
-2. Describe el entorno
-3. Incluye logs (sin información sensible)
+If you find a bug or issue:
+1. Open an issue
+2. Describe the environment
+3. Include logs (without sensitive data)
 
 
 ---------------------------------------------------------------------
 DISCLAIMER
 ---------------------------------------------------------------------
 
-Este software se proporciona "tal cual", sin garantías de ningún tipo.
-El autor no se hace responsable por daños directos o indirectos
-derivados del uso de esta herramienta.
+This software is provided "as is", without warranty of any kind.
+The author is not responsible for any direct or indirect damage
+resulting from the use of this tool.
 
 
 =====================================================================
+
